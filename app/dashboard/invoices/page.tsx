@@ -8,14 +8,11 @@ import { Suspense } from 'react';
 import { fetchInvoicesPages } from '@/app/lib/data';
 import { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Invoices',
-};
- 
+// Garde une seule déclaration de metadata
 export const metadata: Metadata = {
   title: 'Invoices | Acme Dashboard',
 };
- 
+
 export default async function Page({
   searchParams,
 }: {
