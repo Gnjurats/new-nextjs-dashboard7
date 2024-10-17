@@ -1,3 +1,7 @@
+'use server';
+
+export async function createInvoice(formData: FormData) {}
+
 import { sql } from '@vercel/postgres';
 import {
   CustomerField,
@@ -14,12 +18,12 @@ export async function fetchRevenue() {
     // Artificially delay a response for demo purposes.
     // Don't do this in production :)
 
-    // console.log('Fetching revenue data...');
-    // await new Promise((resolve) => setTimeout(resolve, 3000));
+    console.log('Fetching revenue data...');
+    await new Promise((resolve) => setTimeout(resolve, 3000));
 
     const data = await sql<Revenue>`SELECT * FROM revenue`;
 
-    // console.log('Data fetch completed after 3 seconds.');
+    console.log('Data fetch completed after 3 seconds.');
 
     return data.rows;
   } catch (error) {
@@ -60,11 +64,11 @@ export async function fetchCardData() {
          SUM(CASE WHEN status = 'pending' THEN amount ELSE 0 END) AS "pending"
          FROM invoices`;
 
-    const data = await Promise.all([
-      invoiceCountPromise,
-      customerCountPromise,
-      invoiceStatusPromise,
-    ]);
+         const data = await Promise.all([
+          invoiceCountPromise,
+          customerCountPromise,
+          invoiceStatusPromise,
+        ]);
 
     const numberOfInvoices = Number(data[0].rows[0].count ?? '0');
     const numberOfCustomers = Number(data[1].rows[0].count ?? '0');
@@ -141,6 +145,7 @@ export async function fetchInvoicesPages(query: string) {
 }
 
 export async function fetchInvoiceById(id: string) {
+  noStore();
   try {
     const data = await sql<InvoiceForm>`
       SELECT
@@ -158,6 +163,7 @@ export async function fetchInvoiceById(id: string) {
       amount: invoice.amount / 100,
     }));
 
+    console.log(invoice); // Invoice is an empty array []
     return invoice[0];
   } catch (error) {
     console.error('Database Error:', error);
