@@ -49,14 +49,12 @@ export async function updateInvoice(
     await sql`
       UPDATE invoices
       SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
-      WHERE id = ${id}
-    `;
+      WHERE id = ${id};
+    `; // Point-virgule ajouté ici
   }
  
   revalidatePath('/dashboard/invoices');
   redirect('/dashboard/invoices');
-}
-
   export async function deleteInvoice(id: string) {
     throw new Error('Failed to Delete Invoice');
     
