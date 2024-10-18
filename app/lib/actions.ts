@@ -50,7 +50,7 @@ export async function updateInvoice(
       UPDATE invoices
       SET customer_id = ${customerId}, amount = ${amountInCents}, status = ${status}
       WHERE id = ${id};
-    `; // Point-virgule ajouté ici
+    ` // Point-virgule ajouté ici
   }
 
   revalidatePath('/dashboard/invoices');
