@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'; // Import the Image component
 
 const DevenirArbitre = () => {
     return (
@@ -11,9 +12,6 @@ const DevenirArbitre = () => {
             </div>
             <div id="main-wrapper">
                 <div className="topbar">
-                    {/* ============================================================== */}
-                    {/* Header */}
-                    {/* ============================================================== */}
                     <div className="header3">
                         <div className="po-relative">
                             <div className="h3-topbar">
@@ -40,7 +38,6 @@ const DevenirArbitre = () => {
                                                 <li>
                                                     <a><span className="vdevider"></span></a>
                                                 </li>
-                                                
                                             </ul>
                                             <button className="navbar-toggler d-flex ms-auto d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#header3" aria-controls="header3" aria-expanded="false" aria-label="Toggle navigation">
                                                 <span className="ti-menu"></span>
@@ -56,7 +53,7 @@ const DevenirArbitre = () => {
                                             <span className="ti-menu"></span>
                                         </button>
                                         <a className="navbar-brand" href="https://www.gag-ge.ch">
-                                            <img src="https://gag-ge.ch/front/default/images/logo.png" alt="wrapkit" />
+                                            <Image src="https://gag-ge.ch/front/default/images/logo.png" alt="wrapkit" width={120} height={40} />
                                         </a>
                                         <div className="collapse navbar-collapse hover-dropdown" id="header3">
                                             <ul className="navbar-nav">
@@ -81,15 +78,11 @@ const DevenirArbitre = () => {
                             </div>
                         </div>
                     </div>
-                    {/* ============================================================== */}
-                    {/* End Header */}
-                    {/* ============================================================== */}
                 </div>
                 <div className="page-wrapper">
                     <section className="bg-light">
                         <div className="container">
                             <div className="row mini-spacer">
-                                {/* Column */}
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <h3 className="text-uppercase">Devenir arbitre de football</h3>
                                     <p>Tu aimes le football ? Prendre des décisions ? Tu possèdes de nombreuses qualités de meneur ? Et tu souhaites t'engager dans une fonction à responsabilités ?</p>
@@ -102,10 +95,9 @@ const DevenirArbitre = () => {
                                         <li><i className="sl-icon-check text-primary"></i> Suivre la formation des arbitres débutants</li>
                                     </ul>
                                 </div>
-                                {/* Column */}
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="p-20">
-                                        <img src="https://gag-ge.ch/front/default/images/arbitre_02.jpg" alt="wrapkit" className="rounded img-shadow img-responsive" data-aos="flip-right" data-aos-duration="1200" />
+                                        <Image src="https://gag-ge.ch/front/default/images/arbitre_02.jpg" alt="wrapkit" className="rounded img-shadow img-responsive" width={500} height={300} data-aos="flip-right" data-aos-duration="1200" />
                                     </div>
                                 </div>
                             </div>
