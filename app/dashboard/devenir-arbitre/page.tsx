@@ -84,17 +84,17 @@ const DevenirArbitre = () => {
                         <div className="container">
                             <div className="row mini-spacer">
                                 <div className="col-lg-6 order-2 order-lg-1">
-                <h3 className="text-uppercase">Devenir arbitre de football</h3>
-                <p>Tu aimes le football ? Prendre des décisions ? Tu possèdes de nombreuses qualités de meneur ? Et tu souhaites t&apos;engager dans une fonction à responsabilités ?</p>
-                <p>Voici les conditions pour devenir arbitre:</p>
-                <ul className="list-block m-b-30">
-                    <li><i className="sl-icon-check text-primary"></i> Etre agé(e) entre 15 et au maximum 45 ans</li>
-                    <li><i className="sl-icon-check text-primary"></i> Avoir une bonne condition physique</li>
-                    <li><i className="sl-icon-check text-primary"></i> Avoir une bonne connaissance de la langue française (oral / écrit)</li>
-                    <li><i className="sl-icon-check text-primary"></i> Réussir le test d'entrée</li>
-                    <li><i className="sl-icon-check text-primary"></i> Suivre la formation des arbitres débutants</li>
-                </ul>
-            </div>
+                                    <h3 className="text-uppercase">Devenir arbitre de football</h3>
+                                    <p>Tu aimes le football ? Prendre des décisions ? Tu possèdes de nombreuses qualités de meneur ? Et tu souhaites t&apos;engager dans une fonction à responsabilités ?</p>
+                                    <p>Voici les conditions pour devenir arbitre:</p>
+                                    <ul className="list-block m-b-30">
+                                        <li><i className="sl-icon-check text-primary"></i> Etre agé(e) entre 15 et au maximum 45 ans</li>
+                                        <li><i className="sl-icon-check text-primary"></i> Avoir une bonne condition physique</li>
+                                        <li><i className="sl-icon-check text-primary"></i> Avoir une bonne connaissance de la langue française (oral / écrit)</li>
+                                        <li><i className="sl-icon-check text-primary"></i> Réussir le test d'entrée</li>
+                                        <li><i className="sl-icon-check text-primary"></i> Suivre la formation des arbitres débutants</li>
+                                    </ul>
+                                </div>
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="p-20">
                                         <Image src="https://gag-ge.ch/front/default/images/arbitre_02.jpg" alt="wrapkit" className="rounded img-shadow img-responsive" width={500} height={300} data-aos="flip-right" data-aos-duration="1200" />
