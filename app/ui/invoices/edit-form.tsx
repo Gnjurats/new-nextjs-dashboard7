@@ -1,6 +1,6 @@
 'use client';
 
-import { CustomerField, InvoiceForm } from '@/app/lib/definitions';
+import { InvoiceForm } from '@/app/lib/definitions';
 import { updateInvoice } from '@/app/lib/actions';
 import { useActionState } from 'react';
 
