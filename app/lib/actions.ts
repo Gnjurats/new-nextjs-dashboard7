@@ -52,6 +52,7 @@ export async function updateInvoice(
       WHERE id = ${id};
     `; // Point-virgule ajouté ici
   } catch (error) {
+    console.error('Failed to update invoice:', error); // Ajoutez un log de l'erreur
     return { message: 'Database Error: Failed to Update Invoice.' };
   }
 
@@ -65,6 +66,7 @@ export async function deleteInvoice(id: string) {
     revalidatePath('/dashboard/invoices');
     return { message: 'Deleted Invoice.' };
   } catch (error) {
+    console.error('Failed to delete invoice:', error); // Ajoutez un log de l'erreur
     return { message: 'Database Error: Failed to Delete Invoice.' };
   }
 }
