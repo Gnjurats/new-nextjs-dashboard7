@@ -104,8 +104,9 @@ export async function createInvoice(prevState: State, formData: FormData) {
       VALUES (${customerId}, ${amountInCents}, ${status}, ${date});
     `;
   } catch (error) {
+    console.error('Échec de la création de la facture:', error); // Enregistrer l'erreur
     return {
-      message: 'Database Error: Failed to Create Invoice.',
+      message: 'Erreur de base de données : Échec de la création de la facture.',
     };
   }
 
