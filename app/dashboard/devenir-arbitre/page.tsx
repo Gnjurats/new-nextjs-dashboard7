@@ -85,7 +85,7 @@ const DevenirArbitre = () => {
                             <div className="row mini-spacer">
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <h3 className="text-uppercase">Devenir arbitre de football</h3>
-                                    <p>Tu aimes le football ? Prendre des décisions ? Tu possèdes de nombreuses qualités de meneur ? Et tu souhaites t&apos;engager dans une fonction à responsabilités ?</p>
+                                    <p>Tu aimes le football ? Prendre des décisions ? Tu possèdes de nombreuses qualités de meneur ? Et tu souhaites t&amp;apos;engager dans une fonction à responsabilités ?</p>
                                     <p>Voici les conditions pour devenir arbitre:</p>
                                     <ul className="list-block m-b-30">
                                         <li><i className="sl-icon-check text-primary"></i> Etre agé(e) entre 15 et au maximum 45 ans</li>
